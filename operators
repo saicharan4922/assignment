@@ -1,0 +1,30 @@
+# fibonacci
+a = 0
+b = 1
+for i in range(50):
+    c = a+b
+    a=b
+    b=c
+    print(a)
+
+
+# word to mirror dimension
+b=[]
+x=input("enter the input")
+for i in range(len(x)-1,-1,-1):
+    b.append(x[i])
+b=''.join(b)
+print(b)
+
+
+# even and odd from a series
+numbers = (1, 2, 3, 4, 5, 6, 7, 8, 9) 
+k= 0
+l = 0
+for x in numbers:
+        if not x % 2:
+    	     l+=1
+        else:
+    	    k+=1
+print("Number of even numbers :",l)
+print("Number of odd numbers :",k)
