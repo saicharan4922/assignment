@@ -1,0 +1,31 @@
+#1
+def sum_list(lst):
+    return sum(lst)
+my_list = [8, 2, 3, 0, 7]
+total = sum_list(my_list)
+print(total)
+
+#2
+def reverse_string(string):
+    return string[::-1]
+my_string = "1234abcd"
+reversed_string = reverse_string(my_string)
+print(reversed_string)
+
+#3
+def count_upper_lower(string):
+    upper_count = 0
+    lower_count = 0
+    for char in string:
+        if char.isupper():
+            upper_count += 1
+        elif char.islower():
+            lower_count += 1
+    return upper_count, lower_count
+my_string = "The quick Brow Fox"
+upper, lower = count_upper_lower(my_string)
+print("No. of Upper case characters :", upper)
+print("No. of Lower case characters :", lower)
+
+
+
