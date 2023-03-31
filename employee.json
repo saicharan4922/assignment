@@ -1,0 +1,38 @@
+[
+    {
+      "Name": "John Doe",
+      "DOB": "1990-01-01",
+      "Height": "6'0\"",
+      "City": "New York",
+      "State": "NY"
+    },
+    {
+      "Name": "Jane Smith",
+      "DOB": "1995-02-02",
+      "Height": "5'6\"",
+      "City": "Los Angeles",
+      "State": "CA"
+    },
+    {
+      "Name": "Bob Johnson",
+      "DOB": "1985-03-03",
+      "Height": "5'10\"",
+      "City": "Chicago",
+      "State": "IL"
+    },
+    {
+      "Name": "Sarah Williams",
+      "DOB": "1992-04-04",
+      "Height": "5'8\"",
+      "City": "Houston",
+      "State": "TX"
+    },
+    {
+      "Name": "David Lee",
+      "DOB": "1988-05-05",
+      "Height": "6'2\"",
+      "City": "San Francisco",
+      "State": "CA"
+    }
+  ]
+  
