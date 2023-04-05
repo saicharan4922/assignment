@@ -1,0 +1,163 @@
+#1. What are the built-in data types in Python?
+# The built-in data types in Python are: int, float, bool, str, list, tuple, set, frozenset, dict, and None.
+
+#2. Explain the difference between mutable and immutable data types in Python.
+# Mutable data types can be changed after they are created, while immutable data types cannot be changed after they are created. For example, lists (mutable) can have elements added, removed, or modified, while tuples (immutable) cannot.
+
+#3. How do you declare and initialize a variable in Python?
+# You can declare and initialize a variable in Python using the assignment operator (=). For example:
+x = 10  # declares and initializes a variable 'x' with the value 10
+
+
+#4. What are the different types of operators in Python?
+# The different types of operators in Python are: arithmetic operators, comparison operators, logical operators, assignment operators, bitwise operators, and membership operators.
+
+# 5. Explain the concept of type casting in Python.
+# Type casting is the process of converting a value from one data type to another. Python provides built-in functions like int(), float(), str(), etc., that can be used for type casting.
+
+#6. What are conditional statements in Python? Provide examples.
+# Conditional statements in Python allow you to make decisions in your code based on certain conditions. Examples of conditional statements are: if, elif, and else statements. For example:
+
+x = 5
+if x > 0:
+    print("x is positive")
+elif x < 0:
+    print("x is negative")
+else:
+    print("x is zero")
+#7. What are looping statements in Python? Provide examples.
+# Looping statements in Python allow you to repeat a block of code multiple times. Examples of looping statements are: for and while loops. For example:
+
+# Example of for loop
+for i in range(5):
+    print(i)
+
+# Example of while loop
+x = 0
+while x < 5:
+    print(x)
+    x += 1
+#8. Explain the difference between "is" and "==" operators in Python.
+# The "is" operator in Python is used to check if two objects refer to the same memory location, while the "==" operator is used to check if two objects have the same values. In other words, "is" checks for object identity, while "==" checks for object equality.
+
+# 9. What is the ternary operator in Python? Provide an example.
+# The ternary operator in Python is a concise way to write an if-else statement in a single line. It has the following syntax: value_if_true if condition else value_if_false. For example:
+
+
+x = 10
+y = 20
+max_value = x if x > y else y  # assigns the maximum value between x and y to max_value
+# 10. What are the logical operators in Python? Provide examples.
+# The logical operators in Python are: and, or, and not. They are used to perform logical operations on boolean values. For example:
+
+x = True
+y = False
+
+print(x and y)  # prints False
+print(x or y)   # prints True
+print(not x)    # prints False
+# 11. Explain the concept of "pass" statement in Python.
+# The "pass" statement in Python is a null statement that does nothing. It is used as a placeholder when a statement is required syntactically but you do not want to execute any code. For example:
+
+if x > 0:
+    # do something
+else:
+    pass   # do nothing
+
+# 12.How do you pass arguments to a function in Python? Explain different types of arguments in Python.
+# In Python, you can pass arguments to a function in several ways:
+
+# Positional Arguments: These are the most common type of arguments. The values are passed based on their positions and matched with the parameter names in the function definition. For example:
+
+def greet(name, age):
+    print("Hello, " + name + ". You are " + str(age) + " years old.")
+
+greet("Alice", 25)  # Positional arguments
+# Keyword Arguments: These are passed with their corresponding parameter names in the function call. This allows you to pass arguments in any order, and the function will match them with the parameter names. For example:
+
+def greet(name, age):
+    print("Hello, " + name + ". You are " + str(age) + " years old.")
+
+greet(age=25, name="Alice")  # Keyword arguments
+# Default Arguments: These are defined with default values in the function definition. If no value is passed for these arguments in the function call, the default values will be used. For example:
+
+def greet(name, age=30):
+    print("Hello, " + name + ". You are " + str(age) + " years old.")
+
+greet("Alice")  # Default argument (age=30)
+# Variable-Length Arguments:
+# *args: This allows you to pass a variable number of positional arguments to a function. The arguments will be packed into a tuple in the function. For example:
+
+def greet(*args):
+    for name in args:
+        print("Hello, " + name + ".")
+
+greet("Alice", "Bob", "Charlie")  # Variable-length positional arguments
+# **kwargs: This allows you to pass a variable number of keyword arguments to a function. The arguments will be packed into a dictionary in the function. For example:
+
+def greet(**kwargs):
+    for name, age in kwargs.items():
+        print("Hello, " + name + ". You are " + str(age) + " years old.")
+
+greet(Alice=25, Bob=30, Charlie=35)  # Variable-length keyword arguments
+# These are the different ways to pass arguments to a function in Python, allowing for flexibility and customization in function calls.
+
+
+# 13.How do you define a function in Python?
+# In Python, you can define a function using the def keyword followed by the function name, a pair of parentheses containing any parameters, and a colon. The function body is indented and contains the code that the function will execute. For example:
+
+def greet(name):
+    print("Hello, " + name + "!")
+
+
+#14. What is a docstring in Python and how do you use it?
+# A docstring in Python is a string that is used to provide documentation for a function or a class. It is usually placed as the first statement inside the function or class definition, enclosed in triple quotes ("""). You can access the docstring of a function or class using the .__doc__ attribute. For example:
+def greet(name):
+    """
+    This function greets the person with the given name.
+    """
+    print("Hello, " + name + "!")
+
+
+# 15. What is a lambda function in Python? Provide an example.
+# A lambda function in Python is a small, anonymous function that is defined using the lambda keyword, followed by a list of parameters, a colon, and an expression. It returns the result of the expression when called. Lambda functions are used for short, simple operations that can be written in a single line. For example:
+
+# # Example of a lambda function that adds two numbers
+add = lambda x, y: x + y
+result = add(3, 5)  # returns 8
+
+
+#16. Explain the concept of function overloading in Python.
+# Function overloading in Python refers to the ability to define multiple functions with the same name but different parameter lists. However, unlike some other programming languages, Python does not support function overloading based on the number or type of arguments. Only the last defined function with the same name will be used.
+
+# 17. How do you handle exceptions in Python? Provide examples.
+# Exception handling in Python is done using try, except, finally, and else blocks. The try block contains the code that might raise an exception, and the except block contains the code that will be executed if an exception is raised. The finally block contains code that will always be executed, regardless of whether an exception is raised or not. The else block contains code that will be executed if no exception is raised. For example:
+
+
+try:
+    # code that might raise an exception
+except ExceptionType:
+    # code to handle the exception
+finally:
+    # code that will always be executed
+
+
+# 18. What are the advantages of using functions in Python?
+# Using functions in Python has several advantages, including:
+# Reusability: Functions can be defined once and used multiple times, reducing code duplication.
+# Modularity: Functions allow you to break down complex tasks into smaller, manageable parts.
+# Abstraction: Functions hide implementation details and provide a higher-level interface for using code.
+# Readability: Functions make code more organized and easier to understand.
+
+
+# 19. How do you use the "return" statement in a function in Python?
+# The return statement in Python is used to specify the value that a function should return when it is called. The returned value can be used in the calling code. For example:
+
+
+def add(x, y):
+    return x + y
+
+result = add(3, 5)  # returns 8
+
+# 20. Explain the concept of recursion in Python. Provide an example.
+# Recursion in Python is a technique where a function calls itself to solve a problem.
