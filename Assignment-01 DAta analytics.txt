@@ -1,0 +1,15 @@
+ship_mode = "Standard Class"
+sales = 1000
+profit = 200
+
+if ship_mode == "Same Day":
+    surcharge = 0.2
+elif ship_mode == "First Class":
+    surcharge = 0.1
+elif ship_mode == "Standard Class":
+    surcharge = 0.05
+else:
+    surcharge = 0
+
+total_cost = (sales - profit) * (1 + surcharge)
+print("Total cost:", total_cost)
